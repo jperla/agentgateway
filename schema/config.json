@@ -12370,6 +12370,7 @@
         "huggingface",
         "mistral",
         "openrouter",
+        "trustedrouter",
         "togetherai",
         "xai",
         "fireworks",

@@ -5287,6 +5287,7 @@ spec:
                 - Openrouter
                 - Perplexity
                 - TogetherAI
+                - TrustedRouter
                 - Typesafe
                 - VertexAI
                 - XAI

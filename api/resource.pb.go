@@ -2640,23 +2640,24 @@ func (AIBackend_ProviderFormat) EnumDescriptor() ([]byte, []int) {
 type AIBackend_ProviderPreset int32
 
 const (
-	AIBackend_PROVIDER_PRESET_UNSPECIFIED AIBackend_ProviderPreset = 0
-	AIBackend_PROVIDER_PRESET_COHERE      AIBackend_ProviderPreset = 1
-	AIBackend_PROVIDER_PRESET_OLLAMA      AIBackend_ProviderPreset = 2
-	AIBackend_PROVIDER_PRESET_BASETEN     AIBackend_ProviderPreset = 3
-	AIBackend_PROVIDER_PRESET_CEREBRAS    AIBackend_ProviderPreset = 4
-	AIBackend_PROVIDER_PRESET_DEEPINFRA   AIBackend_ProviderPreset = 5
-	AIBackend_PROVIDER_PRESET_DEEPSEEK    AIBackend_ProviderPreset = 6
-	AIBackend_PROVIDER_PRESET_GROQ        AIBackend_ProviderPreset = 7
-	AIBackend_PROVIDER_PRESET_HUGGINGFACE AIBackend_ProviderPreset = 8
-	AIBackend_PROVIDER_PRESET_MISTRAL     AIBackend_ProviderPreset = 9
-	AIBackend_PROVIDER_PRESET_OPENROUTER  AIBackend_ProviderPreset = 10
-	AIBackend_PROVIDER_PRESET_TOGETHERAI  AIBackend_ProviderPreset = 11
-	AIBackend_PROVIDER_PRESET_XAI         AIBackend_ProviderPreset = 12
-	AIBackend_PROVIDER_PRESET_FIREWORKS   AIBackend_ProviderPreset = 13
-	AIBackend_PROVIDER_PRESET_META        AIBackend_ProviderPreset = 14
-	AIBackend_PROVIDER_PRESET_PERPLEXITY  AIBackend_ProviderPreset = 15
-	AIBackend_PROVIDER_PRESET_TYPESAFE    AIBackend_ProviderPreset = 16
+	AIBackend_PROVIDER_PRESET_UNSPECIFIED   AIBackend_ProviderPreset = 0
+	AIBackend_PROVIDER_PRESET_COHERE        AIBackend_ProviderPreset = 1
+	AIBackend_PROVIDER_PRESET_OLLAMA        AIBackend_ProviderPreset = 2
+	AIBackend_PROVIDER_PRESET_BASETEN       AIBackend_ProviderPreset = 3
+	AIBackend_PROVIDER_PRESET_CEREBRAS      AIBackend_ProviderPreset = 4
+	AIBackend_PROVIDER_PRESET_DEEPINFRA     AIBackend_ProviderPreset = 5
+	AIBackend_PROVIDER_PRESET_DEEPSEEK      AIBackend_ProviderPreset = 6
+	AIBackend_PROVIDER_PRESET_GROQ          AIBackend_ProviderPreset = 7
+	AIBackend_PROVIDER_PRESET_HUGGINGFACE   AIBackend_ProviderPreset = 8
+	AIBackend_PROVIDER_PRESET_MISTRAL       AIBackend_ProviderPreset = 9
+	AIBackend_PROVIDER_PRESET_OPENROUTER    AIBackend_ProviderPreset = 10
+	AIBackend_PROVIDER_PRESET_TOGETHERAI    AIBackend_ProviderPreset = 11
+	AIBackend_PROVIDER_PRESET_XAI           AIBackend_ProviderPreset = 12
+	AIBackend_PROVIDER_PRESET_FIREWORKS     AIBackend_ProviderPreset = 13
+	AIBackend_PROVIDER_PRESET_META          AIBackend_ProviderPreset = 14
+	AIBackend_PROVIDER_PRESET_PERPLEXITY    AIBackend_ProviderPreset = 15
+	AIBackend_PROVIDER_PRESET_TYPESAFE      AIBackend_ProviderPreset = 16
+	AIBackend_PROVIDER_PRESET_TRUSTEDROUTER AIBackend_ProviderPreset = 17
 )
 
 // Enum value maps for AIBackend_ProviderPreset.
@@ -2679,25 +2680,27 @@ var (
 		14: "PROVIDER_PRESET_META",
 		15: "PROVIDER_PRESET_PERPLEXITY",
 		16: "PROVIDER_PRESET_TYPESAFE",
+		17: "PROVIDER_PRESET_TRUSTEDROUTER",
 	}
 	AIBackend_ProviderPreset_value = map[string]int32{
-		"PROVIDER_PRESET_UNSPECIFIED": 0,
-		"PROVIDER_PRESET_COHERE":      1,
-		"PROVIDER_PRESET_OLLAMA":      2,
-		"PROVIDER_PRESET_BASETEN":     3,
-		"PROVIDER_PRESET_CEREBRAS":    4,
-		"PROVIDER_PRESET_DEEPINFRA":   5,
-		"PROVIDER_PRESET_DEEPSEEK":    6,
-		"PROVIDER_PRESET_GROQ":        7,
-		"PROVIDER_PRESET_HUGGINGFACE": 8,
-		"PROVIDER_PRESET_MISTRAL":     9,
-		"PROVIDER_PRESET_OPENROUTER":  10,
-		"PROVIDER_PRESET_TOGETHERAI":  11,
-		"PROVIDER_PRESET_XAI":         12,
-		"PROVIDER_PRESET_FIREWORKS":   13,
-		"PROVIDER_PRESET_META":        14,
-		"PROVIDER_PRESET_PERPLEXITY":  15,
-		"PROVIDER_PRESET_TYPESAFE":    16,
+		"PROVIDER_PRESET_UNSPECIFIED":   0,
+		"PROVIDER_PRESET_COHERE":        1,
+		"PROVIDER_PRESET_OLLAMA":        2,
+		"PROVIDER_PRESET_BASETEN":       3,
+		"PROVIDER_PRESET_CEREBRAS":      4,
+		"PROVIDER_PRESET_DEEPINFRA":     5,
+		"PROVIDER_PRESET_DEEPSEEK":      6,
+		"PROVIDER_PRESET_GROQ":          7,
+		"PROVIDER_PRESET_HUGGINGFACE":   8,
+		"PROVIDER_PRESET_MISTRAL":       9,
+		"PROVIDER_PRESET_OPENROUTER":    10,
+		"PROVIDER_PRESET_TOGETHERAI":    11,
+		"PROVIDER_PRESET_XAI":           12,
+		"PROVIDER_PRESET_FIREWORKS":     13,
+		"PROVIDER_PRESET_META":          14,
+		"PROVIDER_PRESET_PERPLEXITY":    15,
+		"PROVIDER_PRESET_TYPESAFE":      16,
+		"PROVIDER_PRESET_TRUSTEDROUTER": 17,
 	}
 )
 
@@ -19674,7 +19677,7 @@ const file_resource_proto_rawDesc = "" +
 	"\x11agent_runtime_arn\x18\x01 \x01(\tR\x0fagentRuntimeArn\x12!\n" +
 	"\tqualifier\x18\x02 \x01(\tH\x00R\tqualifier\x88\x01\x01B\f\n" +
 	"\n" +
-	"_qualifier\"\xf4\"\n" +
+	"_qualifier\"\x97#\n" +
 	"\tAIBackend\x12[\n" +
 	"\x0fprovider_groups\x18\x01 \x03(\v22.agentgateway.dev.resource.AIBackend.ProviderGroupR\x0eproviderGroups\x1a6\n" +
 	"\fHostOverride\x12\x12\n" +
@@ -19798,7 +19801,7 @@ const file_resource_proto_rawDesc = "" +
 	"\x06RERANK\x10\a\x12\r\n" +
 	"\tDECISIONS\x10\b\x12\x0e\n" +
 	"\n" +
-	"SYSTEM_ONE\x10\t\"\x89\x04\n" +
+	"SYSTEM_ONE\x10\t\"\xac\x04\n" +
 	"\x0eProviderPreset\x12\x1f\n" +
 	"\x1bPROVIDER_PRESET_UNSPECIFIED\x10\x00\x12\x1a\n" +
 	"\x16PROVIDER_PRESET_COHERE\x10\x01\x12\x1a\n" +
@@ -19817,7 +19820,8 @@ const file_resource_proto_rawDesc = "" +
 	"\x19PROVIDER_PRESET_FIREWORKS\x10\r\x12\x18\n" +
 	"\x14PROVIDER_PRESET_META\x10\x0e\x12\x1e\n" +
 	"\x1aPROVIDER_PRESET_PERPLEXITY\x10\x0f\x12\x1c\n" +
-	"\x18PROVIDER_PRESET_TYPESAFE\x10\x10\"\xb9\x04\n" +
+	"\x18PROVIDER_PRESET_TYPESAFE\x10\x10\x12!\n" +
+	"\x1dPROVIDER_PRESET_TRUSTEDROUTER\x10\x11\"\xb9\x04\n" +
 	"\n" +
 	"MCPBackend\x12>\n" +
 	"\atargets\x18\x02 \x03(\v2$.agentgateway.dev.resource.MCPTargetR\atargets\x12W\n" +
